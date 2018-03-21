@@ -1,0 +1,64 @@
+3 types of recoders
+
+1. web recorder
+2. smart rocorder
+3. screen recorder
+
+web reocder: 
+
+Extract Data, extract table data
+
+Extract data or table date:
+
+COntains two options 1. pattren data - strucure data and it might be in next page 2. regular data - un structired data
+
+loop - for each row in internet table
+system variable: table column
+we can extract the data from table to csv direclty.
+
+if you wnat to extract regural data from web you need use loop : while web link is exist coulumn is 
+
+______________________________________________________________________________________________________________________
+
+Roles and Resposibitlities:
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Explanation for project:
+
+Requirement is..we have to prepare the excel with claims data from pdf which is created by another process.
+
+We have to extract the columnslike..claims numaber, Name of the person and cliamed date etc..
+
+
+-->open the excel
+
+-->go to the begining of the row
+
+-->for each file in folder loop 
+
+-->defien if statement for picking the pdf file like "if file extension = pdf"
+
+--> open pdf file by using open file operation -- --need to provide the system varialbes like current folder and filename.extension to define the path
+
+--> by using insert keystrokes option, select all data and copy all data from pdf
+
+--> by using string operations, get the reuired value from PDF and assign it to varialbe for all required columns
+
+--> Then insert the values in excel by using set cell option in excel operation
+
+__________________________________________________________________________________________________________________________
+
+
+File datacolumn -- reading the data from csv and text 
+
+
+
+
+
+
+
+
+
