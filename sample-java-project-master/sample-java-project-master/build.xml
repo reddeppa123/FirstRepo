@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<project name="SampleJavaProject" default="jar"
-         xmlns:ivy="antlib:org.apache.ivy.ant">
+<project name="SampleJavaProject" default="jar">
+         <--xmlns:ivy="antlib:org.apache.ivy.ant">-->
 
   <!-- Project-specific configuration -->
   <loadproperties srcfile="project.properties"/>
@@ -14,15 +14,6 @@
   <property name="dist.dir" value="dist"/>
 
   <!-- Targets -->
-
-  <target name="resolve" description="Retrieve dependencies with Ivy.">
-    <ivy:resolve log="download-only"/>
-    <ivy:cachepath conf="build" pathid="build.classpath"/>
-    <ivy:cachepath conf="default" pathid="runtime.classpath"/>
-    <ivy:cachefileset conf="default" setid="runtime.fileset"/>
-    <ivy:cachepath conf="test" pathid="test.classpath"/>
-    <ivy:cachepath conf="analysis" pathid="analysis.classpath"/>
-  </target>
 
   <target name="compile" depends="resolve" description="Compile all sources.">
     <mkdir dir="${dist.dir}"/>
